@@ -4,5 +4,7 @@ with time I produced a lot of code which is stored in my hard drive. Actually, I
 They work on my computer so I hope with a little adjustment they will work on yours too. 
 If you need something write me a message. 
 Also when using it in a publication it would be nice if you could cite the source (not the website but a published work preferentially). 
+
 Good luck,
+
 Kamil

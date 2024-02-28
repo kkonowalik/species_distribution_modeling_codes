@@ -100,7 +100,7 @@ final_points@data$species <- 0
 # Create a data frame for EPSG2062 export, with "species" as the first column
 export_df_eps2062 <- data.frame(species = final_points@data$species,
                                 X_Lon = coordinates(final_points)[, 1],
-                                X_Lat = coordinates(final_points)[, 2])
+                                Y_Lat = coordinates(final_points)[, 2])
 
 # Save in EPSG2062
 write.csv(export_df_eps2062, "background_points_df_epsg2062.csv", row.names = FALSE)
@@ -111,9 +111,8 @@ final_points_wgs84 <- spTransform(final_points, CRS("+proj=longlat +datum=WGS84"
 # Create a data frame for the WGS84 version, with "species" as the first column
 export_df_wgs84 <- data.frame(species = final_points_wgs84@data$species,
                               X_Lon = coordinates(final_points_wgs84)[, 1],
-                              X_Lat = coordinates(final_points_wgs84)[, 2])
+                              Y_Lat = coordinates(final_points_wgs84)[, 2])
 
 # Save the WGS84 version
 write.csv(export_df_wgs84, "background_points_df_wgs84.csv", row.names = FALSE)
-
 

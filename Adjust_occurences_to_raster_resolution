@@ -75,7 +75,7 @@ result_df_wgs84 <- result_df_wgs84[, -1]
 
 # Rename the coordinate columns to include "Lat" and "Lon"
 names(result_df_wgs84)[names(result_df_wgs84) == "x"] <- "X_Lon"
-names(result_df_wgs84)[names(result_df_wgs84) == "y"] <- "X_Lat"
+names(result_df_wgs84)[names(result_df_wgs84) == "y"] <- "Y_Lat"
 
 # Save the WGS84 version
 write.csv(result_df_wgs84, "species_occurrences_adjusted__wgs84.csv", row.names=FALSE)
